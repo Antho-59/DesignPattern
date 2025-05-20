@@ -1,0 +1,9 @@
+exo : Builder - construction maiso,
+
+objectif :
+
+Utiliser le pattern BBuilder pour construire des maisons avec differentes caracteristiques
+- nb etage
+-piscine ou oas
+-type de toiture
+-couleur
