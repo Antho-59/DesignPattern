@@ -1,5 +1,7 @@
 package org.example.structural.decorateur.exo;
 
+import java.util.Scanner;
+
 public class SufixDecorator  extends TextDecorator{
     public SufixDecorator(Text text) {
         super(text);
@@ -7,6 +9,8 @@ public class SufixDecorator  extends TextDecorator{
 
     @Override
     public String Transform() {
-        return super.Transform()+" Encore du texte on adore !";
+        Scanner scanner =new Scanner(System.in);
+        String string = scanner.nextLine();
+        return super.Transform()+(" "+string) ;
     }
 }

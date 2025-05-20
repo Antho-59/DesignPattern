@@ -1,5 +1,7 @@
 package org.example.structural.decorateur.exo;
 
+import java.util.Scanner;
+
 public class PrefixDecorator extends TextDecorator {
     public PrefixDecorator(Text text) {
         super(text);
@@ -7,6 +9,8 @@ public class PrefixDecorator extends TextDecorator {
 
     @Override
     public String Transform() {
-        return " Du texte avant le "+super.Transform();
+        Scanner scanner =new Scanner(System.in);
+        String string = scanner.nextLine();
+        return (string+" ")+super.Transform();
     }
 }
