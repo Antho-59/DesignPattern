@@ -1,5 +1,5 @@
 package org.example.structural.decorateur.exo;
 
 public interface Text {
-    String Transform();
+    String Transform(String input);
 }
